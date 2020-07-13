@@ -1,12 +1,12 @@
 # LWJGL_GameEngine
-Java OpenGl GameEngine
+Java OpenGL GameEngine
 
 To create script that executes in game create class that implements MonoBehaviour interface.
 Start method will be executed when game starts. Update method will be executed every frame.
 
 For example:
 
-<pre>
+```Java
 public class ExampleScript implements MonoBehaviour{
   @Override
   public void Start() {
@@ -18,13 +18,13 @@ public class ExampleScript implements MonoBehaviour{
     //Execute every frame
   }
 }
-</pre>
+```
 
 To attach created scripts to application you have to add them calling method EngineManager.addBehaviourToApplication() before start of the application.
 
 For example:
 
-<pre>
+```Java
 public class Main {
 
   public static void main(final String[] args) {
@@ -32,7 +32,7 @@ public class Main {
     EngineManager.runApplication();
   }
 }
-</pre>
+```
 
 </br>
 </br>
